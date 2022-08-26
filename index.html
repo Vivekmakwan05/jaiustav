@@ -225,36 +225,14 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 		opacity: 0;
 		transition: all 0.3s ease;
 	}
-	/*home section*/
-	.imgSlider {
+	.bgimg{
+		background-image: url("C:/html/img/2mg.jpg");
+		z-index: 0;
 		width:100%;
         height: 100%;
-		background-image: url("./jai.jpg");
-		background-size: 100% 100%;
-        animation: changeImage 10s linear infinite;
 	}
-    @keyframes changeImage {
-        0% {
-            background-image: url("./1mg.jpg");
-        }
-
-        25% {
-            background-image: url("./2mg.jpg");
-        }
-
-        50% {
-            background-image: url("./3mg.jpg");
-        }
-
-        75% {
-            background-image: url("./4mg.jpg");
-        }
-
-        100% {
-            background-image: url("./1mg.jpg");
-        }
-    }
-
+	/*home section*/
+	
 
 	/* responsive */
 	@media(max-width: 991px) {
@@ -268,7 +246,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 			visibility: hidden;
 			width: 280px;
 			height: 59%;
-			margin-top: 430px;
+			margin-top: 620px;
 			overflow-y: auto;
 			background-color:teal;
 			border-radius: 30px;
@@ -336,54 +314,44 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 	}
 
 	@media (max-width:1000px) {
-        .imgSlider {
+        .bgimg {
 		width:100%;
         height: 900px;
-		background-image: url("./jai.jpg");
-		background-size: 100% 100%;
-        animation: changeImage 10s linear infinite;
+		
 	}
     }
 
 	@media (max-width:750px) {
-        .imgSlider {
+        .bgimg {
 		width:100%;
         height: 800px;
-		background-image: url("./jai.jpg");
-		background-size: 100% 100%;
-        animation: changeImage 10s linear infinite;
+		
 	}
         
     }
 
 	@media (max-width:600px) {
-        .imgSlider {
+        .bgimg {
 		width:100%;
         height: 700px;
-		background-image: url("./jai.jpg");
-		background-size: 100% 100%;
-        animation: changeImage 10s linear infinite;
+		
 	}
         
     }
 
 	@media (max-width:420px) {
-        .imgSlider {
+        .bgimg {
 		width:100%;
         height: 500px;
-		background-image: url("./jai.jpg");
-		background-size: 100% 100%;
-        animation: changeImage 10s linear infinite;
+		
 	}
         
     }
 	@media (max-width:300px) {
-        .imgSlider {
+        .bgimg {
 		width:100%;
         height: 400px;
-		background-image: url("./jai.jpg");
-		background-size: 100% 100%;
-        animation: changeImage 10s linear infinite;
+		
 	}}
 
 	*{
@@ -865,7 +833,14 @@ padding-inline-end: 0px;
 .testimonials{
 	margin-top: 40px;
 }
-
+ul.b {
+  list-style-type:square;
+  margin-left: 300px;
+}
+ul.b1 {
+  list-style-type:circle;
+  margin-left: 300px;
+}
 </style>
 <body>
 	<header class="header">
@@ -885,61 +860,126 @@ padding-inline-end: 0px;
 						<img src="./close.svg" alt="close">
 					</div>
 					<ul class="menu">
-						<li class="menu-item">
-							<a href="index2.html">Home</a>
+						<li class="menu-item menu-item-has-children">
+							<a href="Services.html" data-toggle="sub-menu">Home <i class="plus"></i></a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">
+									Jai ustave means</a></li>
+								<li class="menu-item"><a href="#">Jai Meaning</a></li>
+								<li class="menu-item"><a href="#">Medicine Pargraph</a></li>
+								<li class="menu-item"><a href="#"> Day Spend</a></li>
+							</ul>
 						</li>
 
-						<li class="menu-item">
+						<li class="menu-item menu-item-has-children">
 							<a href="about.html">About Us</a>
+						
 						</li>
 
 					
-						<li class="menu-item menu-item-has-children">
+						<li class="menu-item">
 							<a href="Services.html">Our Services </a>
-							<ul class="sub-menu">
-								<li class="menu-item"><a href="#INDEPENDENT">
-									SILVER CARE</a></li>
-								<li class="menu-item"><a href="#ASSISTED">DEMENTAI</a></li>
-								<li class="menu-item"><a href="#POSTOPERATIVECARE">
-
-								POST OPERATIVE</a></li>
-								<li class="menu-item"><a href="#DEMENTIACARE"> PALLIATIVE CARE</a></li>
-							</ul>
 						</li>
 						<li class="menu-item">
 							<a href="gallery.html">Gallery</a>
 						</li>
-						
-						<button ><a href="#contact1">Contact</a> </button>
+						<li class="menu-item">
+							<a href="carrier.html">Carrier</a>
+						</li>
+						<button ><a href="contact.html">Contact</a> </button>
 				</nav>				
 			</div>
 		</div>
 	
 	</header>
-	<div class="imgSlider"></div>
+	<div class="bgimg"></div>
 </section>
 <section class="vision"><div>
 	<h1>Our <span>Vision</span> </h1>
 	 <p  class="him2">We at Jai Utsav want to build a world where our seniors live an active and enthusiastic life. Without borders.
 		Where sparks are reignited and moments missed earler are relived</p>  
 		</div>
-		<h2>Why Jai <span> UTSAV</span></h2>
-		<p>रंगों से भरेंगे आसमां
-			एक खूबसूरत कल सजाएंगे
-		   डोली में बैठ के आएगी खुशी
-			  एक ऐसी दुनिया बसायेंगे</p><br>
+		<h2>JaiUtsav  <span> Means</span></h2>
+		<p>स्वयं पर जीत का उत्सव है,
+			जय उत्सव।
+        </p><br>
 		    
 			  <ul class="him3">
-			  <li>JaiUtsav is the first of its kind Age reversal facility rejuvenating life for seniors at its facilities specially designed to meet the needs of ageing. Jai Utsav means to win over thy self, We would love to erase the scars of time and the wrinkles of long years of neglect.</li>
-<li>Our loving healthcare professionals will ensure that cheeks turn pinker and smiles broader.
-	The heart soothes and happiness from within radiates among the residents.</li>
-	<li>Working on auditory and visual stimulation motor skills,consistent scheduled meal times,bed times medication and vital parameters in senior’s lives. Meditation,yog,plants, music, reading, drawing and painting play a pivotal role in calming the senses.</li>
-<li >An active connect with families and dear ones kindness, self compassion.</li>
-	<li>An active connect with families and dear ones
-		kindness,Just to mention a few a basics, self compassion.Safety, Clean Surroundings.</li><br>
+			  <li>“JaiUtsav means Self Victory. 
+				Victory over Thought, word and deed.”
+				. Having emerged victorious in their past we welcome seniors to spend a great future with us.</li>
+				<h2>Medicines - Lifestyle modifications</h2>
+	<li>Medicines are important for a dementia patient, but they are just a part of the jigsaw puzzle. They need a complete care ecosystem, Lifestyle modification that revolves around a psycho- dynamic roadmap, Brain Stimulation activities, games and social support for the patient which go step by step in ensuring a fuller life.
+		Various therapies may aid in brain jogging of your loved one and act as a catalyst for cognitive capabilities, also be supportive in enjoyment and illuminating lives.
+		We at Jaiutsav ensure and try to improve their (quality of life function in daily activities. enhance cognition, mood and behaviour) overall experience of life.
+		This, therefore, becomes challenging for families to offer appropriate quality time and remedial treatment to the Dementia/ Alzheimer patients at home. 
+		Thus JaiUtsav was innate.
+		We at Jaiutsav, assure best-in-class Therapeutic approach designed by a panel of professionals that are suitable for your loved ones based on their medical conditions and history.
+		</li>
+		<h2>When to reach at Jaiutsav team</h2>
+<li >When you find your loved one’s showing more than one indicators on daily basis as mentioned below </li>
+</ul><br>
+<ul class="b">
+	<li>Memory loss </li>
+	<li>Impaired Judgement </li>
+	<li>Difficulty performing familiar tasks and Abstract thinking </li>
+	<li>Faulty reasoning and Inappropriate behaviour </li>
+	<li>Problem with language (Confuse or difficult to express words) </li>
+	<li>Disorientation to time and Place </li>
+	<li>GIAT, Motor and Balance problem</li>
+	<li>Neglect of Personal Care and safety</li>
+	<li>Hallucination. Paranoia and Agitation</li>
+</ul>
+
+<ul class="him3">
+	<h2>RISK FACTOR DEMENTIA</h2>
 	
 </ul>
-			
+<ul class="b">
+<img src="./dematenia.png" height="270px" width="320px">
+
+</ul>
+<h2>RISK FACTOR FOR DEMENTIA </h2>
+<ul class="b">
+	<li>1.	AGE , SEX and Genetic  </li>
+	<li>2.	Over Weight, Drug/ Smoking/ Alcohol </li>
+	<li>3.	Poor Education , Low physical Activity / Poor Nutrition </li>
+	<li>4.	Blood pressure. Blood Sugar, Cholesterol   </li>
+	<li>5.	Depression/ Stress  </li>
+	<li>6.	Heart Disease, Diabetes ,Vascular disease  </li>
+	<li>7.	Brain Injury, Inflammatory stress/Tumour</li>
+	<li>8.	HIV Infection. Some Immunological Diseases     </li><br>
+
+	<img src="./demn2.png" height="270px" width="320px">
+</ul>
+
+<h2>Management or Therapeutic Approach </h2><br>
+
+<ul class="b1">
+	<li>	Activities of daily living  </li>
+	<li>Behavioural Control  </li>
+	<li>Cognitive Remediation  </li>
+	<li>Ant dementia Drugs </li>
+	<li>Environmental measures   </li>
+</ul>
+<h2>
+	Therapeutic Approach/ Intervention made by Professional / Clinical psychologist 
+	</h2><br>
+
+	<ul class="b">
+		<li>1.	PSYCHOSOCIAL INTERVENTION: Psychotherapy, Talk Therapy, CST (Cognitive stimulation therapy and training). </li>
+		<li>2.	Emotional Well-being Therapy: Reminisce therapy.  ADL (activities of daily Living) Skill Training, Activity planning.   </li>
+		<li>3.	Behavioural Therapy: Aroma Therapy. Music therapy, Sound therapy and ART therapy  </li>
+		<li>4.	Occupational Therapy:  Physical therapy, Lessening the burden on caretakers and Reducing the overall amount of care needed </li>
+		<li>5.	Multi-sensory Stimulation Therapy   </li>
+		<li>6.	Validation and Reality Orientation therapy  </li>
+		<li>7.	Pharmacological treatment</li>
+	</ul>
+	<ul class="him3">
+		<li><b>Memory aids such as calendars, diaries, schedules of daily routine, memory books, electronic device or Colour coding are used at our Centre. </b></li>
+		
+	</ul>
+
 </section>
  <div class="testimonials">
       <div class="inner">
